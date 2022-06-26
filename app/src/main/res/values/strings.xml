@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">WebymaxHosting</string>
+    <string name="app_title">Webymax Hosting</string>
+    <string name="auto_tv_province_hint">Enter Province</string>
+    <string name="btn_submit">Submit</string>
+
+    //EditText
+    <string name="et_name">Please enter your name</string>
+    <string name="et_registration_date">Registration date</string>
+
+    //checkbox
+    <string name="checkbox_unlimited">Unlimited databases</string>
+    <string name="checkbox_staging">Staging</string>
+
+    //text view
+    <string name="tv_hosting_plan">Hosting Plan</string>
+    <string name="tv_database_type">Database Type</string>
+    <string name="tv_webspace_title">Select size of webspace</string>
+    <string name="tv_additional_feature_title">Additional Features</string>
+
+    //Radio button
+    <string name="radio_startup">StartUp</string>
+    <string name="radio_growbig">GrowBig</string>
+    <string name="rb_demand_backup">On-Demand Backup</string>
+    <string name="rb_php">Ultrafast PHP</string>
+    <string name="rb_git">Staging + git</string>
+    <string name="rb_priority_support">Priority Support</string>
+
+    //Arraylist for spinner
+    <string-array name="array_list">
+        <item>Select Size</item>
+        <item>10GB</item>
+        <item>20GB</item>
+        <item>40GB</item>
+    </string-array>
+</resources>

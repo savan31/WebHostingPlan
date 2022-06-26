@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C8C5C5"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_title"
+                android:textAlignment="center"
+                android:textColor="#400202"
+                android:textSize="30dp"
+                android:layout_marginTop="30dp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/filledTextFieldFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:hint="@string/et_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_hosting_plan"
+                    android:textAlignment="center"
+                    android:textColor="#191918"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioBtnStartUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_startup"
+                        android:textColor="#1B1A1A"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnGrowBig"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/radio_growbig"
+                        android:textColor="#1B1A1A"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_database_type"
+                    android:textAlignment="center"
+                    android:textColor="#191918"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkboxUnlimitedData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/checkbox_unlimited"
+                    android:textColor="#1B1A1A"
+                    android:textSize="18dp"
+                    android:textStyle="italic" />
+
+                <CheckBox
+                    android:id="@+id/checkboxStaging"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="@string/checkbox_staging"
+                    android:textColor="#1B1A1A"
+                    android:textSize="18dp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textViewSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:text="@string/tv_webspace_title"
+                    android:textAlignment="center"
+                    android:textColor="#191918"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinnerDataSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:entries="@array/array_list" />
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_additional_feature_title"
+                android:textAlignment="center"
+                android:textColor="#191918"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp">
+
+                <RadioGroup
+                    android:visibility="gone"
+                    android:id="@+id/radioGrp2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="false"
+                    tools:ignore="InvalidId">
+
+                    <RadioButton
+                        android:clickable="false"
+                        android:id="@+id/radioBtnOnDemandBackup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rb_demand_backup"
+                        android:textColor="#1B1A1A"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnPhp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rb_php"
+                        android:textColor="#1B1A1A"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:visibility="gone"
+                    android:id="@+id/radioGrp3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <RadioButton
+                        android:id="@+id/radioBtnStagingGit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rb_git"
+                        android:textColor="#1B1A1A"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+
+                    <RadioButton
+                        android:id="@+id/radioBtnPrioritySupport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rb_priority_support"
+                        android:textColor="#1B1A1A"
+                        android:textSize="18dp"
+                        android:textStyle="italic" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/autoTextViewProvince"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/auto_tv_province_hint"
+            />
+
+
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageBtnDatePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_calendar_today_24"
+                tools:ignore="VectorDrawableCompat,SpeakableTextPresentCheck" />
+
+                <EditText
+                    android:id="@+id/editTextDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:hint="@string/et_registration_date"
+                    android:inputType="date" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_submit"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:backgroundTint="#000000" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
